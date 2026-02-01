@@ -1,0 +1,51 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  margin: 0;
+}
+
+header {
+  background: #c02f15;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+section {
+  background: white;
+  margin: 15px;
+  padding: 15px;
+  border-radius: 8px;
+}
+
+input, select {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+}
+
+button {
+  background: #1565c0;
+  color: white;
+  padding: 10px;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.booking-item {
+  padding: 8px;
+  border-bottom: 1px solid #ccc;
+}
+
+footer {
+  background: #0d47a1;
+  padding: 15px;
+  text-align: center;
+}
+
+footer a {
+  color: white;
+  margin: 10px;
+  text-decoration: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nikita Car Rental</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>🚗 Pratik Car Rental Service</h1>
+  <p>Date Wise Booking | Distance Based Price</p>
+</header>
+
+<section class="price">
+  <h2>Calculate Price</h2>
+
+  <!-- Route Selection-->
+   <select id="route">
+    <option value="">Select Route</option>
+    <option value="Birsa-Baihar">Birsa-Baihar</option>
+    <option value="Birsa-Ukwa">Birsa-Ukwa</option>
+    <option value="Birsa-Balaghat">Birsa-Balaghat</option>
+    <option value="Birsa-Gondia">Birsa-Gondia</option>
+    <option value="Birsa-Nagpur">Birsa-Nagpur</option>
+    </select>
+
+    <select id="tripType">
+    <option value="oneway">One Way</option>
+    <option value="round">Round Trip</option>
+   </select>
+
+<input type="number" id="days" placeholder="Total Days (for per day charge)">
+
+  <input type="number" id="distance" placeholder="Distance (KM)">
+  <button onclick="calculatePrice()">Check Price</button>
+  <p id="priceResult"></p>
+</section>
+
+<section class="booking">
+  <h2>Book a Car</h2>
+
+  <input type="text" id="name" placeholder="Customer Name">
+  <input type="tel" id="mobile" placeholder="Mobile Number">
+  <input type="date" id="date">
+
+
+  
+  <select id="car">
+    <option value="Swift">Swift Dzire</option>
+    <option value="Ertiga">Ertiga</option>
+    <option value="">WagonR</option>
+    <option value="C">Innova</option>
+  </select>
+
+  <select id="carType">
+    <option value="nonac">Non Ac</option>
+    <option value="ac">AC</option>
+  </select>
+  <input type="number" id="toll" placeholder="Total Toll Amount(₹)">
+
+  <button onclick="bookCar()">Book Now</button>
+  <p id="statusMsg"></p>
+</section>
+
+<section>
+  <h2>Booking Status</h2>
+  <div id="bookingList"></div>
+</section>
+
+<footer>
+  <a href="tel:8718000345">📞 Call</a>
+  <a href="https://wa.me/918718000345" target="_blank">💬 WhatsApp</a>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
